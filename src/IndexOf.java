@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GreatestInList {
+public class IndexOf {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -17,17 +17,15 @@ public class GreatestInList {
             list.add(input);
         }
 
-        int greatest = list.get(0);
 
-        for(int i = 0; i < list.size(); i++) {
-            int number = list.get(i);
-            if (greatest < number) {
-                greatest = number;
+        System.out.println("Search for? ");
+        int search = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 0; i < list.size(); i++) {
+            if (search == list.get(i)) {
+                System.out.println(search + " is at index " + i);
             }
         }
-
-        System.out.println("The greatest number: " + greatest);
-
-        // implement finding the greatest number in the list here
+        // implement here finding the indices of a number
     }
 }
