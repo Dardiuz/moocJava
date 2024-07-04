@@ -14,13 +14,5 @@ public class IndexWasNotFound {
         array[6] = 9;
         array[7] = 7;
 
-        System.out.print("Search for? ");
-        int searching = Integer.valueOf(scanner.nextLine());
-
-        for(int i = 0; i < array.length; i++ ){
-            } else {
-            }
-        }
     }
-
 }
