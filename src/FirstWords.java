@@ -1,26 +1,21 @@
 
 import java.util.Scanner;
 
-public class AVClub {
+public class FirstWords {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+
         while (true) {
 
             String input = scanner.nextLine();
-
             if (input.equals("")) {
                 break;
             }
-
-            String[] parts = input.split("\\s+");
-            for(String part : parts){
-                if(part.contains("av")){
-                    System.out.println(part);
-                }
-            }
-
+            String[] parts = input.split(" ");
+            System.out.println(parts[0]);
         }
     }
 }
+
